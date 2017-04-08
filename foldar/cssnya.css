@@ -1,0 +1,331 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul > li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+body{
+  background: url('img/bg/a.png'), url('img/bg/aa.png'), #888;
+  background-attachment: fixed, fixed;
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+}
+video{
+  width: 100%;
+  margin: auto;
+}
+audio{
+  width: 100%;
+}
+.clear{
+  clear: both;
+}
+#container{
+  width: 85%;
+  margin: 0 auto;
+}
+/*----- Menu -----*/
+.navi{
+  width: 83%;
+  margin: 0 auto;
+}
+#menukr{
+  width:60%;
+  float: left;
+}
+#menukr > li{
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  background-color: white;
+  height: 30px;
+  line-height: 30px;
+}
+#menukr > li > a{color: #ac3838;}        #menukr > li > a:hover{color: #846532;}
+#menukn{
+  width: 40%;
+  float: left;
+}
+#menukn > li{
+  width: 50%;
+  text-align: center;
+  float: left;
+  background-color: white;
+  height: 30px;
+  line-height: 30px;
+}
+ul#menukn > li > a{
+  color: #0e4770;
+}
+ul#menukn > li > a:hover{
+  color: #082c46;
+}
+ul.submenu{
+  position:absolute;
+  background-color: #ac3838;
+  list-style-type:none;
+  width:14.1%;
+  display: none;
+}
+ul.submenu > li:hover{
+  color: #B8DAEF;
+  background-color: #b05e5e;
+}
+ul.submenu > li > a{
+  color: white;
+}
+.navi li:hover .submenu{
+  display: block;
+}
+/*------------------*/
+#header{
+  background: url('img/header.jpg');
+  height: 190px;
+  color: white;
+  font-size: 40px;
+  line-height: 200px;
+  background-repeat: no-repeat;
+  width: 83%;
+  margin: 0 auto;
+  background-size: cover;
+}
+/*---- Pengumuman/Peringatan ----*/
+#box_pengu{
+  width: 83%;
+  margin: 0 auto;
+  max-height: 40px;
+}
+#span1{
+  display:block;
+  float:left;
+  width:20%;
+  background:black;
+  color:Red;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 13px;
+}
+#span1:hover{
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+#span2{
+  display:block;
+  float:left;
+  width:80%;
+  background:#fff;
+  color:#888;
+  height: 45px;
+  line-height: 45px;
+  font-size: 12px;
+}
+/*---- BoxKontent + Konten + Sidebar ----*/
+#boxkonten{
+  width: 83%;
+  margin: 0 auto;
+}
+#konten{
+  width: 65%;
+  height: 300px;
+  background-color: black;
+  float: left;
+}
+/*--- Slider image ----*/
+@keyframes slider {
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+
+#slider{
+  overflow: hidden;
+}
+#slider #naku img{
+  width: 20%;
+  float: left;
+  height: 288px;
+}
+#naku{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+/*---- Sidebar ----*/
+#sidebar{
+  width: 35%;
+  height: 300px;
+  background-color: white;
+  float: right;;
+}
+.ipt, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+#sbar{
+  height: 360px;
+}
+.tab {
+  font-size: 14px;
+  display: block;
+  float: left;
+  padding: 10px 30px;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #DDD;
+  width: 33.3%;
+  box-sizing: border-box;
+}
+.tab:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background:
+}
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 {
+  display: block;
+}
+.ipt:checked + .tab {
+  border-right-color: #DDD;
+  border-left-color: #DDD;
+  border-bottom-color: transparent;
+  text-decoration: none;
+}
+.gmbr{
+  width:30%;height:52px;
+  border:1px solid #e0e2df;
+  margin:2px;
+  padding:2px;
+  display:block;
+  float:left;
+}
+.dskrp{
+  width:64%;height:55px;
+  float:left;
+  border-bottom:1px dashed #e0e2df;
+  margin:2px;
+  padding:2px;
+  font-size: 15px;
+}
+.dskrp:hover{
+  text-decoration: underline;
+}
+/*-------------------------*/
+#boxinfo{
+  width: 83%;
+  margin: auto;
+  background-color: white;
+  height:auto;
+}
+ul#box-isi li{
+  float: left;
+  width: 30%;
+  list-style: none;
+  margin: 30px 14px;
+}
+.name{
+  font-size: 25px;
+  width: 263px;
+  height: 152px;
+  color: #c61c1c;
+  background-color: rgba(129, 126, 126, 0.68);
+  position: absolute;
+  line-height: 152px;
+  text-align: center;
+  display: none;
+}
+ul#box-isi li:hover .name{
+  display: block;
+}
+li > img {
+  height: 152px;
+  width : 263px;
+}
+/*-------------------------------------------*/
+#boxkontak{
+  width: 83%;
+  background-color: white;
+  margin: 0 auto;
+}
+#kontak{
+  float: left;
+  width: 40%;
+  border-right: 5px solid #EBE5E5;
+  height: 300px;
+  margin-right: 20px;
+}
+#peta{
+  width: 20%
+  float: right;
+}
+
+.isi{
+  width: 83%;
+  margin: 0 auto;
+  background-color: white;
+}
+/*-------------LOGIN-------------*/
+#inpt1, #inpt, #sgn, .sgn1 {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #0074b9;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0074b9;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+button:hover {
+    background-color: #148fd7;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
